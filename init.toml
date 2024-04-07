@@ -1,0 +1,445 @@
+#=============================================================================
+# dark_powered.toml --- dark powered configuration example for SpaceVim
+# Copyright (c) 2016-2020 Wang Shidong & Contributors
+# Author: Wang Shidong < wsdjeg at 163.com >
+# URL: https://spacevim.org
+# License: GPLv3
+#=============================================================================
+
+# All SpaceVim option below [option] section
+[options]
+    # set spacevim theme. by default colorscheme layer is not loaded,
+    # if you want to use more colorscheme, please load the colorscheme
+    # layer
+#colorscheme = ""
+#    colorscheme_bg = "dark"
+    # Disable guicolors in basic mode, many terminal do not support 24bit
+    colorscheme = "dracula"
+    colorscheme_bg = "dark"
+   # true colors
+    enable_guicolors = true
+    bootstrap_after = 'myspacevim#after'
+
+    # Disable statusline separator, if you want to use other value, please
+    # install nerd fonts
+    statusline_separator = "arrow"
+    statusline_iseparator = "arrow"
+    buffer_index_type = 4
+    enable_tabline_filetype_icon = true
+    enable_statusline_mode = false
+
+    filemanager = "nerdtree"
+    # Git blamer 
+    blamer_enabled = 1
+    blamer_show_in_insert_modes = 0
+    disabled_plugins = ['deoplete.nvim']
+
+    autocomplete_method = "coc"
+    auto_completion_return_key_behavior = "complete" 
+    auto_completion_tab_key_behavior = "complete"
+
+    auto_completion_complete_with_key_sequence = "jk"
+
+    project_rooter_patterns = ['_darcs/', '.hg/', '.bzr/', '.svn/', '!packages/', 'tsconfig.json', 'tsconfig.app.json']
+    max_column = 120
+    synmaxcol = 120
+    norelativenumber = true
+# Enable autocomplete layer
+[[layers]]
+  name = "incsearch"
+[[layers]]
+  name = "lang#c"
+  enable_clang_syntax_highlight = true
+    [layer.clang_std]
+    cpp = "c11"
+
+[[layers]]
+ name = 'autocomplete'
+[[Layers]]
+ name = 'core#statusline'
+ enable = false
+[[layers]]
+    name = "fzf"
+
+[[layers]]
+  name = "lang#ipynb"
+
+[[layers]]
+  name = 'shell'
+  default_position = 'top'
+  default_height = 30
+
+[[layers]]
+  name='colorscheme'
+  lint_on_the_fly = true
+
+[[layers]]
+  name = 'lang#python'
+  format_on_save = true
+  python_interpreter = 'C:\Users\AdlyD\anaconda3\python'
+  enabled_linters = ['python', 'pylint', 'flake8', 'mypy']
+  enable_typeinfo = true
+
+
+
+[[layers]]
+  name = 'lsp'
+  enabled_clients = ['pyright']
+
+[[layers]]
+  name = "lang#python"
+  enable_typeinfo = true
+[[layers]]
+  name = "lang#autohotkey"
+
+  [[layers]]
+    name = 'tools#mpv'
+    mpv_interpreter = 'C:\Users\AdlyD\scoop\apps\mpv\0.34.0\mpv.exe'
+#""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+# 
+#      											EDITOR
+#
+#""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+[[custom_plugins]]
+ # Icons for nerdtree
+ repo = 'ryanoasis/vim-devicons' 
+ merged = false
+
+[[custom_plugins]]
+ # Icons for nerdtree
+ repo = 'preservim/vim-lexical' 
+ merged = false
+
+[[custom_plugins]]
+ # Icons for nerdtree
+ repo = 'preservim/vim-pencil'
+ merged = false
+
+[[custom_plugins]]
+ # Fast commenting
+ repo = 'tomtom/tcomment_vim'
+ merged = false
+
+
+[[custom_plugins]]
+ # Snipets core
+ repo = 'svermeulen/vim-easyclip' 
+ merged = false
+
+[[custom_plugins]]
+ # Snipets core
+ repo = 'honza/vim-snippets' 
+ merged = false
+
+[[custom_plugins]]
+ # Snipets core
+ repo = 'neoclide/coc.nvim'
+ merged = false
+
+ [[custom_plugins]]
+# Colorised brackets
+ repo = 'frazrepo/vim-rainbow' 
+ merged = false
+
+
+[[custom_plugins]]
+ # Visual highlighting for marks
+ repo = 'kshenoy/vim-signature'
+ merged = false
+
+[[custom_plugins]]
+ # Fast surrounding text
+ repo = 'tpope/vim-surround'
+ merged = false
+[[custom_plugins]]
+ # Fast surrounding text
+ repo = 'wakatime/vim-wakatime'
+ merged = false
+
+
+
+#""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+# 
+#      											LANGUAGES 
+#
+#""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+[[custom_plugins]]
+ # debuger for everything
+ repo = 'puremourning/vimspector'
+ merged = false
+
+[[custom_plugins]]
+ # A lot of languages and frameworks syntax
+ repo = 'sheerun/vim-polyglot'
+ merged = false
+
+#[[custom_plugins]]
+# repo = 'prettier/vim-prettier'
+# do = 'yarn add'
+# for = ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html']
+# merged = false
+
+
+#***************************ANGULAR****************************
+# [[custom_plugins]]
+#  repo = 'curist/vim-angular-template'
+#  merged = false
+#
+# [[custom_plugins]]
+#  repo = 'burnettk/vim-angular'
+#  merged = false
+
+
+
+#***************************** JS *****************************
+[[custom_plugins]]
+ repo = 'pangloss/vim-javascript'
+ merged = false
+#**************************** HTML ****************************
+[[custom_plugins]]
+ repo = 'alvan/vim-closetag'
+ merged = false
+
+[[custom_plugins]]
+ repo = 'mattn/emmet-vim'
+ merged = false
+
+[[custom_plugins]]
+ repo = 'digitaltoad/vim-pug'
+ merged = false
+
+#*************************** GOLANG ***************************
+[[custom_plugins]]
+ repo = 'fatih/vim-go'
+ merged = false
+
+#*************************** PYTHON ***************************
+
+[[custom_plugins]]
+ # Venv support
+ repo = 'jmcantrell/vim-virtualenv'
+ merged = false
+
+[[custom_plugins]]
+ repo = 'nvie/vim-flake8'
+ merged = false
+
+#*************************** DEVOPS ***************************
+
+[[custom_plugins]]
+ repo = 'chr4/nginx.vim'
+ merged = false
+
+#*************************** DEVOPS ***************************
+[[custom_plugins]]
+ # Show last editor in current line
+ repo = 'APZelos/blamer.nvim'
+ merged = false
+
+[[custom_plugins]]
+ # Very powerfull utilit for git
+ repo = 'tpope/vim-fugitive'
+ merged = false
+
+[[custom_plugins]]
+ # Jumping between changes, showing change of left line
+ repo = 'airblade/vim-gitgutter'
+ merged = false
+
+[[custom_plugins]]
+ # Github/lab GBrowse feature
+ repo = 'tpope/vim-rhubarb'
+ merged = false
+
+[[custom_plugins]]
+ # Support GBrowse for bitbucket
+ repo = 'tommcdo/vim-fubitive'
+ merged = false
+
+ [[custom_plugins]]
+     repo = 'junegunn/fzf.vim'
+     merged = false
+
+[[custom_plugins]]
+    repo = 'junegunn/fzf'
+    merged = false
+
+[[custom_plugins]]
+    repo = 'a-x-/vim-cyr'
+    merged = false
+
+[[custom_plugins]]
+    repo = 'posva/vim-vue'
+    merged = false
+#""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+# 
+# 											 THEMES/COLORSCHEMES
+#
+#""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+# [[custom_plugins]]
+#     repo = 'flazz/vim-colorschemes'
+#     merged = false
+# Big pack of themes
+[[custom_plugins]]
+    repo = 'NLKNguyen/papercolor-theme'
+    merged = false
+[[custom_plugins]]
+    repo = 'xolox/vim-misc'
+    merged = false
+[[custom_plugins]]
+    repo = 'xolox/vim-colorscheme-switcher'
+    merged = false
+[[custom_plugins]]
+    repo = 'sonph/onehalf'
+    rtp = 'vim'
+    merged = false
+[[custom_plugins]]
+    repo = 'ayu-theme/ayu-vim'
+    merged = false
+[[custom_plugins]]
+    repo = 'kyoz/purify'
+    merged = false
+[[custom_plugins]]
+    repo = 'xolox/vim-notes'
+    merged = false
+ [[custom_plugins]]
+    repo = 'andreasvc/vim-256noir'
+    merged = false
+ [[custom_plugins]]
+    repo = 'vim-scripts/wombat256.vim' 
+    merged = false
+ [[custom_plugins]]
+    repo = 'nikolvs/vim-sunbather'
+    merged = false
+ [[custom_plugins]]
+    repo = 'vim-scripts/rdark-terminal2.vim'
+    merged = false
+ [[custom_plugins]]
+    repo = 'vim-scripts/rdark-terminal2.vim'
+    merged = false
+  [[custom_plugins]]
+    repo = 'kyoz/purify' 
+    merged = false
+[[custom_plugins]]
+    repo = 'fcpg/vim-orbital' 
+    merged = false
+[[custom_plugins]]
+    repo = 'dikiaap/minimalist'
+    merged = false
+[[custom_plugins]]
+    repo = 'christophermca/meta5'
+    merged = false
+[[custom_plugins]]
+    repo = 'challenger-deep-theme/vim'
+    merged = false
+[[custom_plugins]]
+    repo = 'Badacadabra/vim-archery' 
+    merged = false
+[[custom_plugins]]
+    repo = 'andreasvc/vim-256noir'
+    merged = false
+[[custom_plugins]]
+    repo = 'whatyouhide/vim-gotham'
+    merged = false
+[[custom_plugins]]
+    repo = 'jaredgorski/fogbell.vim'
+    merged = false
+[[custom_plugins]]
+    repo = 'rakr/vim-one'
+    merged = false
+[[custom_plugins]]
+    repo ='dikiaap/minimalist' 
+    merged = false
+[[custom_plugins]]
+    repo = 'cseelus/vim-colors-lucid' 
+    merged = false
+[[custom_plugins]]
+    repo = 'dracula/vim' 
+    merged = false
+[[custom_plugins]]
+    repo ='TroyFletcher/vim-colors-synthwave'
+[[custom_plugins]]
+    repo ='kyoz/purify'
+    merged = false
+[[custom_plugins]]
+    repo = 'bluz71/vim-nightfly-guicolors'
+    merged = false
+[[custom_plugins]]
+    repo = 'bluz71/vim-moonfly-colors'
+    merged = false
+[[custom_plugins]]
+    repo = 'deathlyfrantic/vim-distill'
+    merged = false
+[[custom_plugins]]
+    repo = 'arzg/vim-colors-xcode'
+    merged = false
+[[custom_plugins]]
+    repo = 'NLKNguyen/papercolor-theme'
+    merged = false
+[[custom_plugins]]
+    repo = 'embark-theme/vim'
+    merged = false
+[[custom_plugins]]
+    repo = 'KeitaNakamura/neodark.vim'
+    merged = false
+[[custom_plugins]]
+    repo = 'ayu-theme/ayu-vim'
+    merged = false
+[[custom_plugins]]
+    repo = 'vim-scripts/greenvision'
+    merged = false
+[[custom_plugins]]
+    repo = 'ful1e5/onedark.nvim'
+    merged = false
+[[custom_plugins]]
+    repo = 'mrjones2014/lighthaus.nvim'
+    merged = false
+[[custom_plugins]]
+  repo = "dracula/vim"
+  name = "dracula"
+ [[custom_plugins]]
+    repo = 'github/copilot.vim'
+    merged = false
+[[custom_plugins]]
+    repo = 'glacambre/firenvim'
+    merged = false
+[[custom_plugins]]
+  repo = 'vimwiki/vimwiki'
+  merged = false
+[[custom_plugins]]
+  repo = 'airblade/vim-rooter'
+  merged = false
+[[custom_plugins]]
+  repo =  'averms/black-nvim'
+  merged = false
+[[custom_plugins]]
+  repo  = 'Cofyc/vim-uncrustify'
+  merged = false
+[[custom_plugins]]
+  repo = 'luochen1990/rainbow'
+  merged = false
+[[custom_plugins]]
+  repo = 'tyru/open-browser.vim'
+  merged = false
+[[custom_plugins]]
+ repo = 'ludovicchabant/vim-gutentags'
+ merged = false
+[[custom_plugins]]
+ repo = 'itchyny/lightline.vim'
+ merged = false
+[[custom_plugins]]
+ repo = 'bfrg/vim-cpp-modern'
+ merged = false
+[[custom_plugins]]
+ repo = 'Yggdroot/indentLine'
+ merged = false
+[[custom_plugins]]
+ repo = 'RRethy/vim-illuminate'
+ merged = false
+[[custom_plugins]]
+ repo = 'rhysd/devdocs.vim'
+ merged = false
+ [[custom_plugins]]
+ repo ='ianding1/leetcode.vim'
+ merged = false

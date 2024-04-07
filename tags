@@ -1,0 +1,71 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+<A-6>	autoload\myspacevim.vim	/^nnoremap <silent> <A-6> :Vista!!<CR>$/;"	m
+<A-o>	autoload\myspacevim.vim	/^nnoremap <silent> <A-o> :FSHere<cr>$/;"	m
+<C-J>	autoload\myspacevim.vim	/^imap <silent><script><expr> <C-J> copilot#Accept("\\<CR>")$/;"	m
+<C-c>	autoload\myspacevim.vim	/^vnoremap <C-c> "*y$/;"	m
+<C-v>	autoload\myspacevim.vim	/^imap <C-v> <ESC>"+pa$/;"	m
+<C-v>	autoload\myspacevim.vim	/^vmap <C-v> c<ESC>"+p$/;"	m
+<C-x>	autoload\myspacevim.vim	/^vmap <C-x> "+c$/;"	m
+<F10>	autoload\myspacevim.vim	/^map <F10> :e %:p:s,.hpp$,.X123X,:s,.cpp$,.hpp,:s,.X123X$,.cpp,<CR>$/;"	m
+<F3>	autoload\myspacevim.vim	/^nnoremap<F3> :Copilot disable<CR>$/;"	m
+<F4>	autoload\myspacevim.vim	/^nnoremap<F4> :Copilot enable<CR>$/;"	m
+<F6>	autoload\myspacevim.vim	/^inoremap <silent> <F6> <C-O>:set spell!<CR>$/;"	m
+<F6>	autoload\myspacevim.vim	/^nnoremap <silent> <F6> :set spell!<CR>$/;"	m
+<F9>	autoload\myspacevim.vim	/^map <F9> :w<CR>:term python %<CR>$/;"	m
+<leader>li	autoload\myspacevim.vim	/^nnoremap <leader>li :LeetCodeSignIn<cr>$/;"	m
+<leader>ll	autoload\myspacevim.vim	/^nnoremap <leader>ll :LeetCodeList<cr>$/;"	m
+<leader>ls	autoload\myspacevim.vim	/^nnoremap <leader>ls :LeetCodeSubmit<cr>$/;"	m
+<leader>lt	autoload\myspacevim.vim	/^nnoremap <leader>lt :LeetCodeTest<cr>$/;"	m
+<leader>osq	autoload\myspacevim.vim	/^nnoremap <silent> <leader>osq :call openbrowser#smart_search(expand('<cword>'), "qt")<CR>$/;"	m
+<leader>osx	autoload\myspacevim.vim	/^nnoremap <silent> <leader>osx :call openbrowser#smart_search(expand('<cword>'), "cppreference")<CR>$/;"	m
+<leader>rs	autoload\myspacevim.vim	/^nnoremap <silent> <leader>rs :let _s=@\/ <Bar> :%s\/\\s\\+$\/\/e <Bar> :let @\/=_s <Bar> :nohl <Bar> :unlet _s <CR>$/;"	m
+<localleader>gB	autoload\myspacevim.vim	/^nnoremap <localleader>gB :call vimspector#ToggleConditionalBreakpoint()<cr>$/;"	m
+<localleader>gR	autoload\myspacevim.vim	/^nnoremap <localleader>gR :call vimspector#Restart()<cr>$/;"	m
+<localleader>gb	autoload\myspacevim.vim	/^nnoremap <localleader>gb :call vimspector#ToggleBreakpoint()<cr>$/;"	m
+<localleader>gc	autoload\myspacevim.vim	/^nnoremap <localleader>gc :call vimspector#Continue()<cr>$/;"	m
+<localleader>gd	autoload\myspacevim.vim	/^nnoremap <localleader>gd :call vimspector#Launch()<cr>$/;"	m
+<localleader>gi	autoload\myspacevim.vim	/^nnoremap <localleader>gi :call vimspector#StepInto()<cr>$/;"	m
+<localleader>gn	autoload\myspacevim.vim	/^nnoremap <localleader>gn :call vimspector#StepOver()<cr>$/;"	m
+<localleader>go	autoload\myspacevim.vim	/^nnoremap <localleader>go :call vimspector#StepOut()<cr>$/;"	m
+<localleader>gp	autoload\myspacevim.vim	/^nnoremap <localleader>gp :call vimspector#Pause()<cr>$/;"	m
+<localleader>gr	autoload\myspacevim.vim	/^nnoremap <localleader>gr :call vimspector#RunToCursor()<cr>$/;"	m
+<localleader>gs	autoload\myspacevim.vim	/^nnoremap <localleader>gs :call vimspector#Stop()<cr>$/;"	m
+<localleader>oh	autoload\myspacevim.vim	/^nnoremap <silent> <localleader>oh :FSSplitLeft<cr>$/;"	m
+<localleader>oj	autoload\myspacevim.vim	/^nnoremap <silent> <localleader>oj :FSSplitBelow<cr>$/;"	m
+<localleader>ok	autoload\myspacevim.vim	/^nnoremap <silent> <localleader>ok :FSSplitAbove<cr>$/;"	m
+<localleader>ol	autoload\myspacevim.vim	/^nnoremap <silent> <localleader>ol :FSSplitRight<cr>$/;"	m
+Fold	autoload\myspacevim.vim	/^function! Fold(lnum)$/;"	f
+JbzRemoveDebugPrints	autoload\myspacevim.vim	/^command! JbzRemoveDebugPrints call s:JbzRemoveDebugPrints()$/;"	c
+JbzRemoveDebugPrints	autoload\myspacevim.vim	/^function! s:JbzRemoveDebugPrints()$/;"	f
+L	autoload\myspacevim.vim	/^nmap L <Plug>(devdocs-under-cursor)$/;"	m
+LightlineCurrentFunctionVista	autoload\myspacevim.vim	/^function! LightlineCurrentFunctionVista() abort$/;"	f
+b:neoformat_run_all_formatters	autoload\myspacevim.vim	/^let b:neoformat_run_all_formatters = 1$/;"	v
+g:copilot_enabled	autoload\myspacevim.vim	/^let g:copilot_enabled = v:false$/;"	v
+g:copilot_no_tab_map	autoload\myspacevim.vim	/^let g:copilot_no_tab_map = v:true$/;"	v
+g:cpp_attributes_highlight	autoload\myspacevim.vim	/^let g:cpp_attributes_highlight = 1$/;"	v
+g:cpp_class_decl_highlight	autoload\myspacevim.vim	/^let g:cpp_class_decl_highlight = 1$/;"	v
+g:cpp_class_scope_highlight	autoload\myspacevim.vim	/^let g:cpp_class_scope_highlight = 1$/;"	v
+g:cpp_member_variable_highlight	autoload\myspacevim.vim	/^let g:cpp_member_variable_highlight = 1$/;"	v
+g:leetcode_browser	autoload\myspacevim.vim	/^let g:leetcode_browser = 'firefox'$/;"	v
+g:leetcode_default_language	autoload\myspacevim.vim	/^let g:leetcode_default_language = 'cpp'$/;"	v
+g:neoformat_basic_format_retab	autoload\myspacevim.vim	/^let g:neoformat_basic_format_retab = 1$/;"	v
+g:neoformat_basic_format_trim	autoload\myspacevim.vim	/^let g:neoformat_basic_format_trim = 1$/;"	v
+g:neoformat_cpp_clangformat	autoload\myspacevim.vim	/^let g:neoformat_cpp_clangformat = {$/;"	v
+g:neoformat_enabled_c	autoload\myspacevim.vim	/^let g:neoformat_enabled_c = ['clangformat']$/;"	v
+g:neoformat_enabled_cpp	autoload\myspacevim.vim	/^let g:neoformat_enabled_cpp = ['clangformat']$/;"	v
+g:neoformat_enabled_python	autoload\myspacevim.vim	/^let g:neoformat_enabled_python = [ 'yapf']$/;"	v
+g:openbrowser_search_engines	autoload\myspacevim.vim	/^let g:openbrowser_search_engines = extend($/;"	v
+g:python3_host_prog	autoload\myspacevim.vim	/^  let g:python3_host_prog = $CONDA_PREFIX . '\/bin\/python'$/;"	v
+g:python3_host_prog	autoload\myspacevim.vim	/^let g:python3_host_prog = "C:\/Users\/AdlyD\/anaconda3\/python"$/;"	v
+g:rainbow_active	autoload\myspacevim.vim	/^let g:rainbow_active = 1$/;"	v
+g:vimspector_install_gadgets	autoload\myspacevim.vim	/^let g:vimspector_install_gadgets = [ 'debugpy']$/;"	v
+l:vimwiki_fold_blank_lines	autoload\myspacevim.vim	/^let l:vimwiki_fold_blank_lines = 0  " set to 1 to fold blank lines$/;"	v
+l:vimwiki_header_type	autoload\myspacevim.vim	/^let l:vimwiki_header_type = ''     " set to '=' for wiki syntax$/;"	v
+myspacevim#after	autoload\myspacevim.vim	/^function! myspacevim#after() abort$/;"	f
+myspacevim#before	autoload\myspacevim.vim	/^function! myspacevim#before() abort$/;"	f
+pencil	autoload\myspacevim.vim	/^augroup pencil$/;"	a
